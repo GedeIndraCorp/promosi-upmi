@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PMB Online - UPMI</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-800">
+   <header class="bg-blue-900 text-white">
+  <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+    <div class="flex items-center space-x-4">
+      <img src="logo-upmi.jpg" alt="Logo UPMI" class="h-12 w-12 rounded-full border-2 border-white">
+      <h1 class="text-xl font-bold">Universitas PGRI Mahadewa Indonesia</h1>
+    </div>
+    <!-- Mobile Menu Button -->
+    <button id="menu-toggle" class="block md:hidden focus:outline-none">
+      <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+    <!-- Desktop Menu -->
+    <nav class="hidden md:flex space-x-6 text-lg">
+      <a href="index.html" class="hover:underline">Beranda</a>
+      <a href="program-studi.html" class="hover:underline">Program Studi</a>
+      <a href="galeri.html" class="hover:underline">Galeri Kampus</a>
+      <a href="pmb.html" class="hover:underline">PMB Online</a>
+    </nav>
+  </div>
+  <!-- Mobile Menu Dropdown -->
+  <nav id="mobile-menu" class="md:hidden hidden flex-col space-y-2 px-6 pb-4 text-lg">
+    <a href="index.html" class="block hover:underline">Beranda</a>
+    <a href="program-studi.html" class="block hover:underline">Program Studi</a>
+    <a href="galeri.html" class="block hover:underline">Galeri Kampus</a>
+    <a href="pmb.html" class="block hover:underline">PMB Online</a>
+  </nav>
+</header>
+
+
+    <section class="py-12 px-6 max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold mb-4">Pendaftaran Mahasiswa Baru</h2>
+        <p class="text-lg mb-4">UPMI membuka pendaftaran mahasiswa baru setiap tahun ajaran dengan beberapa jalur:</p>
+        <ul class="list-disc list-inside mb-6 text-lg">
+            <li>Jalur Reguler</li>
+            <li>Jalur Beasiswa</li>
+            <li>Jalur Prestasi</li>
+        </ul>
+        <p class="text-lg">Untuk info lengkap dan pendaftaran online, kunjungi:</p>
+        <a href="https://upmi.ac.id" class="text-blue-600 underline text-lg">https://upmi.ac.id</a>
+    </section>
+
+    <footer class="bg-blue-900 text-white text-center p-4">
+        &copy; 2025 Universitas PGRI Mahadewa Indonesia. All rights reserved.
+    </footer>
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+</body>
+</html>

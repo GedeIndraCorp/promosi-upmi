@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Kampus - UPMI</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-800">
+   <header class="bg-blue-900 text-white">
+  <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+    <div class="flex items-center space-x-4">
+      <img src="logo-upmi.jpg" alt="Logo UPMI" class="h-12 w-12 rounded-full border-2 border-white">
+      <h1 class="text-xl font-bold">Universitas PGRI Mahadewa Indonesia</h1>
+    </div>
+    <!-- Mobile Menu Button -->
+    <button id="menu-toggle" class="block md:hidden focus:outline-none">
+      <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+    <!-- Desktop Menu -->
+    <nav class="hidden md:flex space-x-6 text-lg">
+      <a href="index.html" class="hover:underline">Beranda</a>
+      <a href="program-studi.html" class="hover:underline">Program Studi</a>
+      <a href="galeri.html" class="hover:underline">Galeri Kampus</a>
+      <a href="pmb.html" class="hover:underline">PMB Online</a>
+    </nav>
+  </div>
+  <!-- Mobile Menu Dropdown -->
+  <nav id="mobile-menu" class="md:hidden hidden flex-col space-y-2 px-6 pb-4 text-lg">
+    <a href="index.html" class="block hover:underline">Beranda</a>
+    <a href="program-studi.html" class="block hover:underline">Program Studi</a>
+    <a href="galeri.html" class="block hover:underline">Galeri Kampus</a>
+    <a href="pmb.html" class="block hover:underline">PMB Online</a>
+  </nav>
+</header>
+
+
+    <section class="py-12 px-6 max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold mb-6">Galeri Kampus</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <img src="C:\Users\Gede Indra\Documents\upmi_promo_website\Gedung 1 UPMI-thumbnail.jpg" alt="Gedung Kampus" class="rounded shadow">
+            <img src="C:\Users\Gede Indra\Documents\upmi_promo_website\Lab Komputer UPMI.png" alt="Laboratorium" class="rounded shadow">
+            <img src="C:\Users\Gede Indra\Documents\upmi_promo_website\Perpustakaan UPMI.png" alt="Perpustakaan" class="rounded shadow">
+            <img src="C:\Users\Gede Indra\Documents\upmi_promo_website\Kegiatan 2 UPMI-thumbnail.jpg" alt="Kegiatan Mahasiswa" class="rounded shadow">
+        </div>
+    </section>
+
+    <footer class="bg-blue-900 text-white text-center p-4">
+        &copy; 2025 Universitas PGRI Mahadewa Indonesia. All rights reserved.
+    </footer>
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+</body>
+</html>

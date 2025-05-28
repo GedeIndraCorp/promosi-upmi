@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Beranda - UPMI</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <header class="bg-blue-900 text-white">
+  <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+    <div class="flex items-center space-x-4">
+      <img src="logo-upmi.jpg" alt="Logo UPMI" class="h-12 w-12 rounded-full border-2 border-white">
+      <h1 class="text-xl font-bold">Universitas PGRI Mahadewa Indonesia</h1>
+    </div>
+    <!-- Mobile Menu Button -->
+    <button id="menu-toggle" class="block md:hidden focus:outline-none">
+      <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+    <!-- Desktop Menu -->
+    <nav class="hidden md:flex space-x-6 text-lg">
+      <a href="index.html" class="hover:underline">Beranda</a>
+      <a href="program-studi.html" class="hover:underline">Program Studi</a>
+      <a href="galeri.html" class="hover:underline">Galeri Kampus</a>
+      <a href="pmb.html" class="hover:underline">PMB Online</a>
+    </nav>
+  </div>
+  <!-- Mobile Menu Dropdown -->
+  <nav id="mobile-menu" class="md:hidden hidden flex-col space-y-2 px-6 pb-4 text-lg">
+    <a href="index.html" class="block hover:underline">Beranda</a>
+    <a href="program-studi.html" class="block hover:underline">Program Studi</a>
+    <a href="galeri.html" class="block hover:underline">Galeri Kampus</a>
+    <a href="pmb.html" class="block hover:underline">PMB Online</a>
+  </nav>
+</header>
+
+  <main class="py-16 px-6 max-w-5xl mx-auto">
+    <h2 class="text-4xl font-bold mb-6">Selamat Datang di UPMI</h2>
+    <p class="text-lg leading-relaxed mb-6">
+      Universitas PGRI Mahadewa Indonesia (UPMI) merupakan institusi pendidikan tinggi yang berkomitmen dalam mencetak lulusan berkualitas dan berintegritas.
+    </p>
+    <p class="text-lg">
+      Temukan informasi lengkap mengenai <strong>program studi</strong>, <strong>fasilitas kampus</strong>, dan <strong>pendaftaran mahasiswa baru</strong> melalui menu navigasi di atas.
+    </p>
+  </main>
+
+  <footer class="bg-blue-900 text-white text-center p-4">
+    &copy; 2025 Universitas PGRI Mahadewa Indonesia. All rights reserved.
+  </footer>
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+</body>
+</html>
+
